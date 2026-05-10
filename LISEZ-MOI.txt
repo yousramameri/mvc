@@ -1,0 +1,15 @@
+(!) Pour SQL, créez une base de données nommée "mvc" et importez le fichier SQL "import" fourni dans le projet, ce qui aura pour effet de créer une table "mvc_news" et d'ajouter 4 enregistrements à celle-ci.
+
+---------------------------------------------
+
+Ici, un exemple minimaliste et largement améliorable d'une architecture MVC avec PHP.
+
+On peut par exemple implémenter un système de routage pour analyser l'URL demandée par l'utilisateur et appeler le bon contrôleur et la bonne action en conséquence.
+
+Aussi, les vues pourraient être "rangées" dans des répertoires, où chaque répertoire fait référence à un contrôleur, ce qui nécessiterait quelques modifications au niveau des méthodes du contrôleur.
+
+Vous pouvez également intégrer un système de gabarits (templates) qui fait office d'interface de base dans laquelle vous injectez vos vues (pensez à la temporisation de sortie : des fonctions comme "ob_start" et "ob_get_contents" pour ne citer qu'elles...). Cela éviterait de répéter le code HTML/CSS d'une page à l'autre.
+
+Enfin, beaucoup de cas d'erreurs ne sont pas traités, et devraient l'être.
+
+Bref, vous avez de quoi faire pour vous exercer 😉
